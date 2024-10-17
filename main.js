@@ -19,13 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		themeIcon.classList.toggle('fa-sun', isDark);
 		themeIcon.classList.toggle('fa-moon', !isDark);
 
-		// Cambiar el color de las tarjetas de proyectos según el tema
 		const projectCards = document.querySelectorAll('.card-proyect');
 		projectCards.forEach((card) => {
 			if (isDark) {
-				card.classList.remove('light-theme-card'); // Elimina la clase de tema claro
+				card.classList.remove('light-theme-card');
 			} else {
-				card.classList.add('light-theme-card'); // Añade la clase de tema claro
+				card.classList.add('light-theme-card');
 			}
 		});
 
@@ -67,23 +66,6 @@ function cambiarIdioma(idioma) {
 			traducciones[idioma][elemento.dataset.i18n] || elemento.textContent;
 	});
 }
-
-const traducciones = {
-	es: {
-		helloTitle: 'Hola, soy [Tu Nombre]',
-		portfolioTitle: 'Mi Portafolio',
-		skillsTitle: 'Habilidades',
-		contactTitle: 'Contacto',
-		sendButton: 'Enviar',
-	},
-	en: {
-		helloTitle: 'Hello, I am [Your Name]',
-		portfolioTitle: 'My Portfolio',
-		skillsTitle: 'Skills',
-		contactTitle: 'Contact',
-		sendButton: 'Send',
-	},
-};
 
 const btn = document.getElementById('button');
 

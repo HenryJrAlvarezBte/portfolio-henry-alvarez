@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Henry Alvarez</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="main.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('WacJ1P8h2wmKBE7nx')
+  </script>
+</head>
+
+<body>
+
+  <header class="flex justify-between items-center p-5 fade-in">
+    <h1 class="text-2xl font-bold">Henry Alvarez</h1>
+    <div class="icons flex items-center">
+      <button id="theme-toggle" class="text-gray-200">
+        <i class="fas fa-sun text-2xl" id="theme-icon"></i>
+      </button>
+      <a href="./translate/english.html" class="ml-4 text-black" title="Translate to English">
+        <i class="fas fa-language text-2xl"></i>
+      </a>
+    </div>
+
+    <nav class="hidden md:flex space-x-4">
+      <a href="#inicio" class="hover:text-gray-400">Inicio</a>
+      <a href="#portafolio" class="hover:text-gray-400">Portafolio</a>
+      <a href="#habilidades" class="hover:text-gray-400">Habilidades</a>
+      <a href="#contacto" class="hover:text-gray-400">Contacto</a>
+    </nav>
+    <button id="hamburger" class="text-gray-200 md:hidden">
+      <i class="fas fa-bars text-2xl"></i>
+    </button>
+  </header>
+
+  <div id="menu" class="hidden flex-col bg-gray-800 w-full p-6 rounded-b-lg shadow-md items-center text-center">
+    <a href="#inicio" class="block text-gray-200 hover:text-gray-400 mb-2">Inicio</a>
+    <a href="#portafolio" class="block text-gray-200 hover:text-gray-400 mb-2">Portafolio</a>
+    <a href="#habilidades" class="block text-gray-200 hover:text-gray-400 mb-2">Habilidades</a>
+    <a href="#contacto" class="block text-gray-200 hover:text-gray-400 mb-2">Contacto</a>
+  </div>
+
+  <main class="max-w-7xl mx-auto p-6 fade-in">
+    <section id="inicio" class="text-center py-20">
+      <table class="w-full">
+        <tr>
+          <td class="text-left pr-4">
+            <h2 class="text-4xl font-bold mb-4">Hola, soy Henry Alvarez</h2>
+            <p class="mb-6">Soy un desarrollador web apasionado por crear experiencias únicas.
+              <br>
+              <span class="text-2xl font-bold">Front End Jr</span>
+            </p>
+            <a href="#portafolio" class="px-5 py-2 bg-blue-600 text-gray-100 rounded hover:bg-blue-700 transition">Ver
+              mi trabajo</a>
+          </td>
+          <td class="text-right">
+            <img class="profile" src="./assets/img/perfil.jpg" alt="imagen de perfil">
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="animate-fade-in mt-12 fade-in" id="portafolio">
+      <h2 class="text-3xl font-semibold mb-4 text-center">Mi Portafolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-300 p-5 rounded-lg shadow-md card-proyect">
+          <h3 class="text-xl font-medium">Clon de Netflix</h3>
+          <p class="mt-2">Se muestra una interfaz al estilo Netflix con algunos retoques.</p>
+          <img src="./assets/img/codoflix.gif" alt="pagina clon netflix">
+          <a href="https://codoflix-netflix-clon.vercel.app" target="_blank"
+            class="in-line m-6 p-2 mt-6 px-4 py-2 bg-green-600 text-gray-100 rounded hover:bg-green-700 transition">Ver
+            Pagina</a>
+          <a href="https://github.com/HenryJrAlvarezBte/codoflix-netflix-clon" target="_blank"
+            class="in-line m-6 p-2 mt-6 px-4 py-2 bg-green-600 text-gray-100 rounded hover:bg-green-700 transition">Ver
+            Github</a>
+        </div>
+        <div class="bg-gray-300 p-5 rounded-lg shadow-md card-proyect">
+          <h3 class="text-xl font-medium">API de gatitos</h3>
+          <p class="mt-2">Se utiliza la API Cataas que entrega imagenes de gatitos con un texto a elección.</p>
+          <img src="./assets/img/Gif-API-Cats.gif" alt="pagina genera tu frase personalizada de gatitos">
+          <a href="https://react-api-cats.vercel.app" target="_blank"
+            class="in-line m-6 p-2 mt-6 px-4 py-2 bg-green-600 text-gray-100 rounded hover:bg-green-700 transition">Ver
+            Pagina</a>
+          <a href="https://github.com/HenryJrAlvarezBte/react-api-cats" target="_blank"
+            class="in-line m-6 p-2 mt-6 px-4 py-2 bg-green-600 text-gray-100 rounded hover:bg-green-700 transition">Ver
+            Github</a>
+        </div>
+        <div class="bg-gray-300 p-5 rounded-lg shadow-md card-proyect">
+          <h3 class="text-xl font-medium">Convocatoria a discursos</h3>
+          <p class="mt-2">Pagina web de discursos en donde puedes simular una compra de tu entrada.</p>
+          <img src="./assets/img/Gif-Convocatoria-oradores.gif" alt="pagina de convocatoria de oradores importantes">
+          <a href="https://henryjralvarezbte.github.io/final_front_2022/" target="_blank"
+            class="in-line m-6 p-2 mt-6 px-4 py-2 bg-green-600 text-gray-100 rounded hover:bg-green-700 transition">Ver
+            Pagina</a>
+          <a href="https://github.com/HenryJrAlvarezBte/final_front_2022" target="_blank"
+            class="in-line m-6 p-2 mt-6 px-4 py-2 bg-green-600 text-gray-100 rounded hover:bg-green-700 transition">Ver
+            Github</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="mt-12 fade-in">
+      <h2 class="text-3xl font-semibold mb-4 text-center">Habilidades</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-gray-800 p-4 rounded-lg text-center card-skills">
+          <img class="logo-html" src="./assets/img/html.png" alt="logo html">
+          <p>De HTML manejo estructuras semánticas, formularios, enlaces, multimedia, tablas, atributos, validación,
+            accesibilidad, diseño responsivo, CSS integrado, DOM, etiquetas, metadatos, y mejores prácticas de
+            desarrollo web.</p>
+        </div>
+        <div class="logo-css bg-gray-800 p-4 rounded-lg text-center card-skills">
+          <img src="./assets/img/css.png" alt="logo css">
+          <p>De CSS manejo propiedades como flexbox, grid, diseño responsivo, animaciones, transiciones, sombras,
+            bordes, márgenes, rellenos, fuentes personalizadas, colores, fondos, transformaciones, media queries,
+            pseudo-clases y pseudo-elementos.</p>
+        </div>
+        <div class="logo-js bg-gray-800 p-4 rounded-lg text-center card-skills">
+          <img src="./assets/img/javascript.png" alt="logo javascript">
+          <p>De JavaScript manejo programación asíncrona, funciones, eventos, manipulación del DOM, APIs, objetos,
+            arrays, promesas, callbacks, módulos, clases, herencia, localStorage, JSON y validación de formularios.</p>
+        </div>
+        <div class="logo-react bg-gray-800 p-4 rounded-lg text-center card-skills">
+          <img src="./assets/img/react.png" alt="logo react">
+          <p>De React manejo la creación de componentes reutilizables, manejo del estado con hooks, rutas con React
+            Router, gestión de efectos secundarios y contexto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="mt-12 fade-in">
+      <h2 class="text-3xl font-semibold mb-4 text-center">Contacto</h2>
+      <form id="form" class="max-w-md mx-auto">
+        <div class="field mb-4">
+          <label for="from_name" class="block mb-2">De quien:</label>
+          <input type="text" name="from_name" id="from_name" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div class="field mb-4">
+          <label for="message" class="block mb-2">Mensaje:</label>
+          <input type="text" name="message" id="message" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div class="field mb-4">
+          <label for="email_id" class="block mb-2">Correo electronico:</label>
+          <input type="email" name="email_id" id="email_id" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <input type="submit" id="button" value="Send Email"
+          class="px-4 py-2 bg-blue-600 text-gray-100 rounded hover:bg-blue-700 transition">
+      </form>
+    </section>
+
+
+  </main>
+
+  <footer class="bg-light-gray-800 text-center py-8">
+    <p class="text-dark-400 font-bold">&copy; Henry Alvarez | Front-End Developer Jr | Todos los derechos reservados.
+    </p>
+  </footer>
+</body>
+
+</html>
